@@ -10,4 +10,5 @@ for i in range(1, 1000):
     a = i ** i
     n = n + a
 
-print(n)
+n = str(n)
+print(n[-10:]) # Answer is 9110846700
