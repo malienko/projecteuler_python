@@ -1,2 +1,2 @@
 # projecteuler_python
-Python Solutions to Project Euler Exercices
+My Python (and sometimes Numpy) Solutions to Project Euler Exercices
