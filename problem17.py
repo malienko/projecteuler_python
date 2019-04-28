@@ -20,19 +20,15 @@ twenty_one_through_ninety_nine = []
 for number in tens:
 	for digit in one_through_nine:
 		twenty_one_through_ninety_nine.append(number + ' ' + digit)
+one_through_ninety_nine = one_through_nine + ten_through_nineteen + tens + twenty_one_through_ninety_nine
 
-tens = tens + twenty_one_through_ninety_nine
-
-under_one_hundred = one_through_nine + ten_through_nineteen + tens
-
-hundreds_with_digits = []
+one_hundred_and_one_through_nine_hundred_ninety_nine = []
 for number in hundreds:
-	for digit in under_one_hundred:
-		hundreds_with_digits.append(number + ' and ' + digit)
+	for digit in one_through_ninety_nine:
+		one_hundred_and_one_through_nine_hundred_ninety_nine.append(number + ' and ' + digit)
+one_hundred_through_nine_hundred_ninety_nine = hundreds + one_hundred_and_one_through_nine_hundred_ninety_nine
 
-under_one_thousand = hundreds + hundreds_with_digits
-
-all_numbers = under_one_hundred + hundreds + hundreds_with_digits + one_thousand
+all_numbers = one_through_ninety_nine + one_hundred_through_nine_hundred_ninety_nine + one_thousand
 
 all_numbers = ''.join(all_numbers)
 all_numbers = all_numbers.replace(" ", "")
